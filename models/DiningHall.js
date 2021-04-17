@@ -1,18 +1,28 @@
 export default (database, DataTypes) => {
   const DiningHall = database.define(
-    "Dining_Hall",
+    'Dining_Hall',
     {
       hall_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        primaryKey: true,
+        primaryKey: true
       },
       hall_name: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING
       },
       hall_address: {
+<<<<<<< HEAD
         type: DataTypes.STRING,
+=======
+        type: DataTypes.STRING
+>>>>>>> 256a471196a6a6c2145ffd312627e4caf69876b3
       },
+      hall_lat: {
+        type: DataTypes.DECIMAL
+      },
+      hall_long: {
+        type: DataTypes.DECIMAL
+      }
     },
     { freezeTableName: true, timestamps: false }
   );
